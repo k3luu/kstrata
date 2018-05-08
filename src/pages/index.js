@@ -95,7 +95,7 @@ class HomeIndex extends React.Component {
                         <p>Frontend Engineer at <a href="https://www.doctor.com/" target="_blank">Doctor.com</a>.
                         Sometimes an amateur photographer.</p>
                         <ul className="actions">
-                            <li><a href="/about" className="button">Learn More</a></li>
+                            <li><Link to="/about" className="button">Learn More</Link></li>
                         </ul>
                     </section>
 
@@ -110,13 +110,15 @@ class HomeIndex extends React.Component {
                         }))} />
 
                         <ul className="actions">
-                            <li><a href="http://luusfilm.tumblr.com/" target="_blank" className="button">View More</a></li>
+                            <li>
+                                <a href="http://luusfilm.tumblr.com/" target="_blank" className="button">View More</a>
+                            </li>
                         </ul>
                     </section>
 
                     <section id="three">
-                        <h2>Get In Touch</h2>
-                        <p>Compliments or concerns?</p>
+                        <h2>Compliments or concerns?</h2>
+                        <p>Happy to chat!</p>
                         <div className="row">
                             <div className="8u 12u$(small)">
                                 <form method="post" action="#">
