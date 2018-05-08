@@ -258,6 +258,7 @@
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+    input[type="submit"],
 	select,
 	textarea {
 		@include vendor('appearance', 'none');
@@ -800,7 +801,7 @@
 		@include vendor('transition', ('background-color #{_duration(transition)} ease-in-out', 'color #{_duration(transition)} ease-in-out', 'border-color #{_duration(transition)} ease-in-out'));
 		background-color: transparent;
 		border-radius: _size(border-radius);
-		border: solid 3px _palette(border);
+		border: solid 2px _palette(border);
 		color: _palette(fg-bold) !important;
 		cursor: pointer;
 		display: inline-block;

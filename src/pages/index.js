@@ -21,12 +21,12 @@ import full05 from '../assets/images/fulls/05.jpg'
 import full06 from '../assets/images/fulls/06.jpg'
 
 const DEFAULT_IMAGES = [
-    { id: '1', src: full01, thumbnail: thumb01, caption: 'Photo 1', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '2', src: full02, thumbnail: thumb02, caption: 'Photo 2', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '3', src: full03, thumbnail: thumb03, caption: 'Photo 3', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '4', src: full04, thumbnail: thumb04, caption: 'Photo 4', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '5', src: full05, thumbnail: thumb05, caption: 'Photo 5', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '6', src: full06, thumbnail: thumb06, caption: 'Photo 6', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'}
+    { id: '1', src: full01, thumbnail: thumb01, caption: 'Stockholm Public Library', description: ''},
+    { id: '2', src: full02, thumbnail: thumb02, caption: 'Brussels mural & friend', description: ''},
+    { id: '3', src: full03, thumbnail: thumb03, caption: 'Pim!', description: ''},
+    { id: '4', src: full04, thumbnail: thumb04, caption: 'Gamla Stan, Stockholm', description: ''},
+    { id: '5', src: full05, thumbnail: thumb05, caption: 'Metro aesthetic', description: ''},
+    { id: '6', src: full06, thumbnail: thumb06, caption: 'Metro aesthetic pt. 2', description: ''}
 ];
 
 class HomeIndex extends React.Component {
@@ -95,22 +95,22 @@ class HomeIndex extends React.Component {
                         <p>Frontend Engineer at <a href="https://www.doctor.com/" target="_blank">Doctor.com</a>.
                         Sometimes an amateur photographer.</p>
                         <ul className="actions">
-                            <li><a href="#" className="button">Learn More</a></li>
+                            <li><a href="/about" className="button">Learn More</a></li>
                         </ul>
                     </section>
 
                     <section id="two">
-                        <h2>Recent Work</h2>
+                        <h2>Recent Photos</h2>
 
-                        {/*<Gallery images={DEFAULT_IMAGES.map(({ id, src, thumbnail, caption, description }) => ({*/}
-                            {/*src,*/}
-                            {/*thumbnail,*/}
-                            {/*caption,*/}
-                            {/*description*/}
-                        {/*}))} />*/}
+                        <Gallery images={DEFAULT_IMAGES.map(({ id, src, thumbnail, caption, description }) => ({
+                            src,
+                            thumbnail,
+                            caption,
+                            description
+                        }))} />
 
                         <ul className="actions">
-                            <li><a href="#" className="button">Full Portfolio</a></li>
+                            <li><a href="http://luusfilm.tumblr.com/" target="_blank" className="button">View More</a></li>
                         </ul>
                     </section>
 
