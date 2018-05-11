@@ -3,6 +3,15 @@ title: Projects
 path: "/projects/"
 ---
 
+##<a href="https://admiring-yalow-846eea.netlify.com/" target="_blank">Two Half-Hitches</a>
+> Two Half-Hitches is designed to help guide you through the outdoors and share information on various hiking trails.
+  
+
+*   Building a new website using Gatsby.js and React.js, using Netlify as a host
+server.
+*   Migrating content to a new site template.
+*   Redesigning/re-imagining components to provider better UI and UX. 
+
 ##Hangouts R Us
 
 *   Built a event-image organizer web application with a team focusing on user-centered design, using AJAX and 
